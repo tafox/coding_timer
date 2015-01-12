@@ -44,6 +44,7 @@ void Menu::start(void) {
 
 void Timer::start(void) {
   time(&start_time);
+  done = false;
   string option;
   while (!done) {
     cout << "Type 'elapsed' to view elapsed time" << endl;
